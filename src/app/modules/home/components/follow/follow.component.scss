@@ -1,0 +1,23 @@
+/* Follow us */ 
+
+.followUs_wrapper {
+    padding: 50px 100px 125px 100px; 
+}
+
+.followUs_title h2 {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    line-height: 100px;  
+    text-align: center;
+}
+
+.followUs_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none; 
+} 
+
+.followUs_logos img { 
+    margin: 20px 25px 0px 10px;
+}

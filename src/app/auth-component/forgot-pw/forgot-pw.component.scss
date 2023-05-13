@@ -1,0 +1,86 @@
+@import 'bootstrap/scss/bootstrap';
+
+.login-dark {
+    height:1000px;
+    background:#000000
+  }
+  
+  .login-dark form {
+    max-width:320px;
+    width:90%;
+    background-color:#6B00D7;
+    padding:40px;
+    border-radius:4px;
+    transform:translate(-50%, -50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:#12052e;
+    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+  }
+  
+  .login-dark .illustration {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:100px;
+    color:#12052e;
+  }
+  
+  .login-dark form .form-control {
+    background:none;
+    border:none;
+    border-bottom:1px solid #12052e;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+  }
+  
+  .login-dark form .btn-primary {
+    background:#12052e;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+  .login-dark form .btn-primary:hover, .login-dark form .btn-primary:active {
+    background:#12052e;
+    outline:none;
+  }
+  
+  .login-dark form .forgot {
+    display:block;
+    text-align:center;
+    font-size:12px;
+    color:#12052e;
+    opacity:0.9;
+  }
+  
+  .login-dark form .forgot:hover, .login-dark form .forgot:active {
+    opacity:1;
+    text-decoration:none;
+  }
+  
+  .login-dark form .btn-primary:active {
+    transform:translateY(1px);
+  }
+
+  ::placeholder{
+    color: #2d2148;
+  }
+  
+  .form-title{
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .login-title{
+    color: #6B00D7;
+    font-size: 37px;
+    text-align: center;
+    padding-top: 80px;
+  }

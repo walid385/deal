@@ -1,0 +1,29 @@
+<!-- Nav --> 
+<div class="nav_wrapper"> 
+    <div class="nav_content">
+        <button class="menu_icon" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="serviceNav_content">
+            <li><a routerLink="../signup">Sign Up</a></li>
+            <li><a  routerLink="../login">Log In</a></li>
+        </ul>
+        <div class="mainNav_wrapper">
+            <div class="nav_brandLogo">
+                <a routerLink="/home"><img src="assets/img/logos/brand/99Deals_logo_white.svg" alt="99Deals Logo"></a>
+            </div>
+            <ul class="mainNav_content" [ngClass]="{'open': isMenuOpen}">
+                <li><a routerLink="./main">Deals of the Day</a></li>
+                <li><a routerLink="./about">About Us</a></li>
+                <li><a routerLink="./sponsor">Sponsors</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Solid Line -->
+<div class="solidLine_wrapper">
+    <hr class="solidLine_content">
+</div>

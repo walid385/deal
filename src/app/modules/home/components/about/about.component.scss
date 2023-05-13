@@ -1,0 +1,41 @@
+
+
+/* About Us */ 
+
+.aboutUs_wrapper {
+    padding: 150px 100px 0px 100px; 
+}
+
+.aboutUs_title h1 {
+    color: rgb(107, 0, 215); 
+    font-size: 125px;
+    text-align: center;
+    padding-bottom: -5px;
+    margin-bottom: -5px; 
+    margin-top: 0px;
+} 
+.aboutUs_text p {
+    color: rgb(107, 0, 215);
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 50px;
+    margin-top: 10px; // Adjust this value to control the space between paragraphs
+  }
+  
+  
+.aboutUs_text__exception p {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.aboutUs_logo {
+    width: 270px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 10px;
+}

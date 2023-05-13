@@ -1,0 +1,25 @@
+/* Sponsorships */ 
+
+.sponsorships_wrapper {
+    padding: 0px 100px 150px 100px; 
+}
+
+.sponsorships_content {
+    background-color: rgb(107, 0, 215); 
+    padding: 100px; 
+} 
+
+.sponsorships_title h2 { 
+    font-weight: 500;
+    font-size: 30px; 
+    text-align: center;
+
+} 
+
+.sponsorships_logos {
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    justify-content: space-evenly; 
+    padding-top: 25px;
+}
