@@ -47,7 +47,7 @@ html {
 .info {
   text-align: center;
   font-family: 'Gilda Display', serif;
-  font-size: 15px;
+  font-size: 25px;
   font-style: italic;
   width: 100%;
   position: relative;
@@ -114,10 +114,11 @@ html {
   .button-back {
     background: #6B00D7;
     border: none;
-    border-radius: 4px;
-    padding: 11px;
+    border-radius: 10px;
     box-shadow: none;
     text-shadow: none;
     outline: none;
     margin-top: 50px;
+    font-size: 25px;
+    padding: 5px 20px 5px 20px;; 
   }
