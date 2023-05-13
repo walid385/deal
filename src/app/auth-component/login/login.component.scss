@@ -83,3 +83,18 @@
     text-align: center;
     padding-top: 80px;
   }
+
+  .nav_brandLogo {
+    position: absolute;
+    top: -10%;  /* Adjust this value as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.nav_brandLogo img {
+    display: block;
+    transition: all 0.4s ease-in-out;
+    width: 200px;  /* Adjust width as needed */
+    height: auto;  /* Keep this as auto to maintain aspect ratio */
+}
