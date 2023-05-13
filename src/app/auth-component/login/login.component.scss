@@ -1,24 +1,23 @@
 @import 'bootstrap/scss/bootstrap';
 
-
 .login-dark {
-    height:1000px;
-    background:#000000
-  }
-  
-  .login-dark form {
-    max-width:320px;
-    width:90%;
-    background-color:#6B00D7;
-    padding:40px;
-    border-radius:4px;
-    transform:translate(-50%, -50%);
-    position:absolute;
-    top:50%;
-    left:50%;
-    color:#12052e;
-    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
-  }
+  height: 1000px;
+  background: #000000;
+}
+
+.login-dark form {
+  max-width: 320px;
+  width: 90%;
+  background-color: #6B00D7;
+  padding: 40px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #12052e;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px 10px #6B00D7; /* Adjust color and spread for desired fade */
+}
   
   .login-dark .illustration {
     text-align:center;
@@ -59,7 +58,6 @@
     font-size:12px;
     color:#12052e;
     opacity:0.9;
-    
   }
   
   .login-dark form .forgot:hover, .login-dark form .forgot:active {

@@ -33,9 +33,33 @@
     justify-content: space-between;
 }
 
-.nav_brandLogo img {
-    width: 200px;
+.nav_brandLogo {
+    position: relative;
+    display: inline-block;
 }
+
+.nav_brandLogo img {
+    display: block;
+    transition: all 1.4s ease-in-out;
+}
+
+.nav_brandLogo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #6B00D7;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.nav_brandLogo:hover::before {
+    opacity: 1.4;
+}
+
 
 .mainNav_content {
     display: flex;
@@ -99,8 +123,17 @@
 
 .solidLine_wrapper { 
     padding: 25px 100px 100px 100px; 
+    position: relative;
 }
 
-hr .solidLine_content {
-    border-top: 2px solid rgb(255, 255, 255);
-} 
+.solidLine_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    transform: translateY(-50%);
+}
+
