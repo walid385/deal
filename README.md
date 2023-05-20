@@ -109,7 +109,7 @@ Die Anwendung ist modular aufgebaut und in verschiedene Hauptkomponenten unterte
 
 ## 3rd-Party Libraries for Angular Project
 
-This project makes use of various third-party libraries to facilitate development and enhance functionality. Here's a list of the key libraries along with their respective versions used:
+Dieses Projekt verwendet verschiedene Drittanbieter-Bibliotheken, um die Entwicklung zu erleichtern und die Funktionalität zu erweitern. Hier ist eine Liste der Schlüsselbibliotheken zusammen mit ihren jeweiligen verwendeten Versionen:
 
 - [@angular/animations](https://www.npmjs.com/package/@angular/animations): ^15.2.0
 - [@angular/common](https://www.npmjs.com/package/@angular/common): ^15.2.0
@@ -133,7 +133,7 @@ This project makes use of various third-party libraries to facilitate developmen
 
 ## APIs
 
-Our application interacts with the following APIs:
+Unsere App interagiert mit den folgenden API's:
 
-- [REST API Strapi](https://strapi.io/): An open-source Node.js Headless CMS to easily build customizable APIs. We use Strapi for all of our application's data management needs, including fetching and managing the dynamic contents displayed across different components.
+- [REST API Strapi](https://strapi.io/): Ein Open-Source Node.js Headless CMS, um einfach anpassbare APIs zu erstellen. Wir verwenden Strapi für alle unsere Anforderungen an das Datenmanagement der Anwendung, einschliesslich dem Abrufen und Verwalten der dynamischen Inhalte, die in verschiedenen Komponenten angezeigt werden.
 
