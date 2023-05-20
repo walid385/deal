@@ -136,4 +136,3 @@ Dieses Projekt verwendet verschiedene Drittanbieter-Bibliotheken, um die Entwick
 Unsere App interagiert mit den folgenden API's:
 
 - [REST API Strapi](https://strapi.io/): Ein Open-Source Node.js Headless CMS, um einfach anpassbare APIs zu erstellen. Wir verwenden Strapi für alle unsere Anforderungen an das Datenmanagement der Anwendung, einschliesslich dem Abrufen und Verwalten der dynamischen Inhalte, die in verschiedenen Komponenten angezeigt werden.
-
