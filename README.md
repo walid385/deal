@@ -82,27 +82,6 @@ Diese Routen gehören zum Home-Modul und leiten den Benutzer zu den verschiedene
 
 Dieses Verhalten wurde bewusst so implementiert, um die Struktur einer echten Anwendung zu simulieren, bei der eine Benutzeranmeldung erforderlich wäre, um auf bestimmte Bereiche der Anwendung zuzugreifen. Wir haben jedoch beschlossen, auf die Implementierung einer vollständigen Authentifizierung zu verzichten, da dies nicht im Fokus unserer App-Entwicklung lag.
 
-## Verwendete Libraries
-
-- [@angular/animations](https://www.npmjs.com/package/@angular/animations): ^15.2.0
-- [@angular/common](https://www.npmjs.com/package/@angular/common): ^15.2.0
-- [@angular/compiler](https://www.npmjs.com/package/@angular/compiler): ^15.2.0
-- [@angular/core](https://www.npmjs.com/package/@angular/core): ^15.2.0
-- [@angular/forms](https://www.npmjs.com/package/@angular/forms): ^15.2.0
-- [@angular/platform-browser](https://www.npmjs.com/package/@angular/platform-browser): ^15.2.0
-- [@angular/platform-browser-dynamic](https://www.npmjs.com/package/@angular/platform-browser-dynamic): ^15.2.0
-- [@angular/router](https://www.npmjs.com/package/@angular/router): ^15.2.0
-- [@fortawesome/angular-fontawesome](https://www.npmjs.com/package/@fortawesome/angular-fontawesome): ^0.12.1
-- [@fortawesome/fontawesome-svg-core](https://www.npmjs.com/package/@fortawesome/fontawesome-svg-core): ~1.2.36
-- [@fortawesome/free-solid-svg-icons](https://www.npmjs.com/package/@fortawesome/free-solid-svg-icons): ^5.15.4
-- [@ng-bootstrap/ng-bootstrap](https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap): ^14.1.1
-- [@popperjs/core](https://www.npmjs.com/package/@popperjs/core): ^2.11.6
-- [bootstrap](https://www.npmjs.com/package/bootstrap): ^5.2.3
-- [font-awesome](https://www.npmjs.com/package/font-awesome): ^4.7.0
-- [fortawesome](https://www.npmjs.com/package/fortawesome): ^0.0.1-security
-- [rxjs](https://www.npmjs.com/package/rxjs): ~7.8.0
-- [tslib](https://www.npmjs.com/package/tslib): ^2.3.0
-- [zone.js](https://www.npmjs.com/package/zone.js): ~0.12.0
 
 ## Struktur der Anwendung und dynamischer Inhalt
 
