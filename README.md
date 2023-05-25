@@ -1,5 +1,9 @@
 # 99Deals
 
+## Übrigens
+
+Im Laufe der Projektentwicklung sind wir auf  eine Herausforderung gestossen, als wir versuchten, Updates auf GitLab zu pushen. Dabei haben wir irrtümlich die Haupt-Branches überschrieben. Als Workaround und zur Wahrung der Arbeitskontinuität und -integrität, haben wir uns entschieden mehrere Branches anzulegen. Zusätzlich zum Entscheid ist die Tatsache dass der der Strapi-Server unabhängig heruntergeladen, abgespeichert und ausgeführt werden muss, um potenzielle Konflikte mit der Angular-Anwendung zu vermeiden und eine unabhängige Verwaltung der Backend-Ressourcen zu gewährleisten.
+
 ## Überblick
 
 99Deals ist eine aufregende und einzigartige E-Commerce Plattform. Jeden Tag werden vier spezielle Deals von vier verschiedenen Unternehmen angeboten, wobei jeder Deal auf nur 99 Stück limitiert ist. Die Plattform ist unkompliziert, neuzeitlich und bietet den Nutzern ein spannendes Einkaufserlebnis. Sie wurde mit [Angular](https://angular.io/) und [Strapi](https://strapi.io/) als Headless CMS erstellt.
@@ -82,7 +86,6 @@ Diese Routen gehören zum Home-Modul und leiten den Benutzer zu den verschiedene
 
 Dieses Verhalten wurde bewusst so implementiert, um die Struktur einer echten Anwendung zu simulieren, bei der eine Benutzeranmeldung erforderlich wäre, um auf bestimmte Bereiche der Anwendung zuzugreifen. Wir haben jedoch beschlossen, auf die Implementierung einer vollständigen Authentifizierung zu verzichten, da dies nicht im Fokus unserer App-Entwicklung lag.
 
-
 ## Struktur der Anwendung und dynamischer Inhalt
 
 Die Anwendung ist modular aufgebaut und in verschiedene Hauptkomponenten unterteilt, die für spezifische Funktionen innerhalb der Anwendung verantwortlich sind. Hier sind die Schlüsselkomponenten und deren Funktionen:
@@ -92,20 +95,20 @@ Die Anwendung ist modular aufgebaut und in verschiedene Hauptkomponenten unterte
   <img src="image/README/1684590086697.png" width="250" height="400" /> 
   <img src="image/README/1684589925673.png" width="250" height="400" /> 
   <img src="image/README/1684590133829.png" width="250" height="400" />
-  <img src="image/README/1684591746845.png" width="350" height="400"/> 
-
+  <img src="image/README/1684591746845.png" width="350" height="400"/>
 - **Hauptmodul**: Dieses Modul umfasst die Hauptseite und besteht aus mehreren spezialisierten Komponenten, darunter:
 
-    | Komponente | Beschreibung                                                                                          | Dynamischer Inhalt von Strapi |
-    | ---------- | ----------------------------------------------------------------------------------------------------- | ----------------------------- |
-    | Navigation | Die Navigationskomponente enthält das obere Menü mit dem Anwendungslogo und den Navigationsbuttons. | Nein                          |
-    | Hero       | Diese Komponente präsentiert einen Begrüßungstext und eine kurze Einführung in 99Deals.           | **Ja**                             |
-    | Main       | Diese Komponente zeigt die Deal-Angebote in einer Spalte an.                                          | **Ja**                            |
-    | Sponsors   | Die Sponsorenkomponente zeigt die Logos der Sponsoren an.                                             | **Ja**                             |
-    | About      | Diese Komponente zeigt Textabschnitte und das Logo von 99Deals.                                       | **Ja**                             |
-    | Follow     | Die Follow-Komponente zeigt die Logos und URLs der Social-Media-Kanäle von 99Deals an.               | Nein                          |
+  | Komponente | Beschreibung                                                                                          | Dynamischer Inhalt von Strapi |
+  | ---------- | ----------------------------------------------------------------------------------------------------- | ----------------------------- |
+  | Navigation | Die Navigationskomponente enthält das obere Menü mit dem Anwendungslogo und den Navigationsbuttons. | Nein                          |
+  | Hero       | Diese Komponente präsentiert einen Begrüßungstext und eine kurze Einführung in 99Deals.           | **Ja**                  |
+  | Main       | Diese Komponente zeigt die Deal-Angebote in einer Spalte an.                                          | **Ja**                  |
+  | Sponsors   | Die Sponsorenkomponente zeigt die Logos der Sponsoren an.                                             | **Ja**                  |
+  | About      | Diese Komponente zeigt Textabschnitte und das Logo von 99Deals.                                       | **Ja**                  |
+  | Follow     | Die Follow-Komponente zeigt die Logos und URLs der Social-Media-Kanäle von 99Deals an.               | Nein                          |
 
-    <img src="image/README/1684590416244.png" width="330" height="700" />
+
+  <img src="image/README/1684590416244.png" width="330" height="700" />
 
 ## 3rd-Party Libraries for Angular Project
 
