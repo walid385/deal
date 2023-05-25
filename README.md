@@ -1,12 +1,12 @@
 # 99Deals
 
-## Übrigens
-
-Im Laufe der Projektentwicklung sind wir auf  eine Herausforderung gestossen, als wir versuchten, Updates auf GitLab zu pushen. Dabei haben wir irrtümlich die Haupt-Branches überschrieben. Als Workaround und zur Wahrung der Arbeitskontinuität und -integrität, haben wir uns entschieden mehrere Branches anzulegen. Zusätzlich zum Entscheid ist die Tatsache dass der der Strapi-Server unabhängig heruntergeladen, abgespeichert und ausgeführt werden muss, um potenzielle Konflikte mit der Angular-Anwendung zu vermeiden und eine unabhängige Verwaltung der Backend-Ressourcen zu gewährleisten.
-
 ## Überblick
 
 99Deals ist eine aufregende und einzigartige E-Commerce Plattform. Jeden Tag werden vier spezielle Deals von vier verschiedenen Unternehmen angeboten, wobei jeder Deal auf nur 99 Stück limitiert ist. Die Plattform ist unkompliziert, neuzeitlich und bietet den Nutzern ein spannendes Einkaufserlebnis. Sie wurde mit [Angular](https://angular.io/) und [Strapi](https://strapi.io/) als Headless CMS erstellt.
+
+## Übrigens
+
+Im Laufe der Projektentwicklung sind wir auf  eine Herausforderung gestossen, als wir versuchten, Updates auf GitLab zu pushen. Dabei haben wir irrtümlich die Haupt-Branches überschrieben. Als Workaround und zur Wahrung der Arbeitskontinuität und -integrität, haben wir uns entschieden mehrere Branches anzulegen. Zusätzlich zum Entscheid ist die Tatsache dass der der Strapi-Server unabhängig heruntergeladen, abgespeichert und ausgeführt werden muss, um potenzielle Konflikte mit der Angular-Anwendung zu vermeiden und eine unabhängige Verwaltung der Backend-Ressourcen zu gewährleisten.
 
 ## Installation und Start
 
