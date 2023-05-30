@@ -1,14 +1,14 @@
 <!-- Sponsorships --> 
-<div class="sponsorships_wrapper">
-</div>
-<div class="sponsorships_content">
-    <div class="sponsorships_title">
-        <h2>We take pride in our sponsorship collaborations!</h2>
-    </div>
-    <div class="sponsorships_logos">
-        <img *ngFor="let sponsor of sponsors" [src]="getLogoUrl(sponsor)" [alt]="sponsor.name">
-      </div>
-      
-      
+<div id="sponsor">
+        <div class="sponsorships_wrapper">
+        </div>
+        <div class="sponsorships_content">
+            <div class="sponsorships_title">
+                <h2>We take pride in our sponsorship collaborations!</h2>
+            </div>
+            <div class="sponsorships_logos">
+                <img *ngFor="let sponsor of sponsors" [src]="getLogoUrl(sponsor)" [alt]="sponsor.name">
+            </div>
+        </div>
 </div>
 

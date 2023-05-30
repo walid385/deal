@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { environment } from 'src/app/environments/environment.development';
+import { environment } from '../../../../environments/environment';
+import { CartService } from '../services/cart.service'; // Importieren Sie den CartService
 
-interface Article {
+export interface Article {
   id: number;
   Brand: string;
   articleName: string;
@@ -16,10 +17,12 @@ interface Article {
         url: string;
       }
     }
+    
   };
+  amount?: number; // Hier ist die neue Eigenschaft. Das Fragezeichen bedeutet, dass diese Eigenschaft optional ist.
 }
 
-interface Response {
+export interface Response {
   data: {
     id: number;
     attributes: Article;
@@ -34,7 +37,7 @@ interface Response {
 export class MainComponent implements OnInit {
   articles: Article[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private cartService: CartService) {}
 
   ngOnInit() {
     this.getArticles();
@@ -51,6 +54,10 @@ export class MainComponent implements OnInit {
       console.log('Articles:', this.articles);
     });
   }
+
+  addToCart(event: Event, article: Article) {
+    event.preventDefault();
+    this.cartService.addToCart(article);
+    console.log("Added to cart: ", article); // Dies wird die hinzugefügte Artikelinformation anzeigen
+  }
 }
-
-

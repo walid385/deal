@@ -1,22 +1,25 @@
-<div class="dealsOfTheDay_cards_wrapper" *ngIf="articles.length > 0">
-  <div class="dealsOfTheDay_title"><h1>Deals of the Day</h1></div>
-  <div *ngFor="let article of articles" class="dealsOfTheDay_card">
-    <div class="dealsOfTheDay_image">
-      <img [src]="getStrapiImageUrl(article.imageUrl)" [alt]="article.articleName">
-    </div> 
-    <div class="dealsOfTheDay_description__wrapper">
-      <div class="dealsOfTheDay_description__content">
-        <div class="dealsOfTheDay_description__contentChildren">
-          <p>{{ article.Brand }} <br>
-          {{ article.articleName }}</p>
-          <p><a href="/home">Buy now for <br> {{ article.price ? article.price + ' CHF' : 'N/A' }}</a></p>
+<div id="main">
+  <div class="dealsOfTheDay_cards_wrapper" *ngIf="articles.length > 0">
+    <div class="dealsOfTheDay_title"><h1>Deals of the Day</h1></div>
+    <div *ngFor="let article of articles" class="dealsOfTheDay_card">
+      <div class="dealsOfTheDay_image">
+        <img [src]="getStrapiImageUrl(article.imageUrl)" [alt]="article.articleName">
+      </div> 
+      <div class="dealsOfTheDay_description__wrapper">
+        <div class="dealsOfTheDay_description__content">
+          <div class="dealsOfTheDay_description__contentChildren">
+            <p>{{ article.Brand }} <br>
+            {{ article.articleName }}</p>
+            <p><a (click)="addToCart($event, article)" href="#">Buy now for <br> {{ article.price ? article.price + ' CHF' : 'N/A' }}</a></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="dealsOfTheDay_howMuchLeft__wrapper">
-      <div class="dealsOfTheDay_howMuchLeft__content">
-        <p>{{ article.stock }} out of 99 items left</p>
+      <div class="dealsOfTheDay_howMuchLeft__wrapper">
+        <div class="dealsOfTheDay_howMuchLeft__content">
+          <p>{{ article.stock }} out of 99 items left</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
