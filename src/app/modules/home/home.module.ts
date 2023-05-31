@@ -10,6 +10,7 @@ import { MainComponent } from './components/main/main.component';
 import { NavComponent } from './components/nav/nav.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { SponsorComponent } from './components/sponsors/sponsors.component';
+import { SmoothScrollDirective } from './components/nav/smooth-scroll.directive';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { SponsorComponent } from './components/sponsors/sponsors.component';
        FollowComponent,
        MainComponent,
        NavComponent,
+       SmoothScrollDirective,
        TimerComponent,
        SponsorComponent,
   ],

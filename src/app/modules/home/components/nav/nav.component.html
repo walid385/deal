@@ -15,22 +15,24 @@
           <a routerLink="/home"><img src="assets/img/logos/brand/99Deals_logo_white.svg" alt="99Deals Logo"></a>
         </div>
         <ul class="mainNav_content" [ngClass]="{'open': isMenuOpen}">
-          <li><a (click)="goToPart('main')">Deals of the Day</a></li>
-          <li><a (click)="goToPart('about')">About Us</a></li>
-          <li><a (click)="goToPart('sponsor')">Sponsors</a></li>
+            <li><a appSmoothScroll="main">Deals of the Day</a></li>
+            <li><a appSmoothScroll="about">About Us</a></li>
+            <li><a appSmoothScroll="sponsor">Sponsors</a></li>            
           <li class="cart-popover">
             <div class="cart-popover-toggle" (click)="toggleCartPopover()">
               <i class="fa fa-shopping-cart" style="color: #6B00D7;"></i>
               <span class="cart-count">{{ cartCount }}</span>
             </div>
             <div class="cart-items" *ngIf="isCartPopoverOpen">
+                <div class="cart-title">
+                    <h2>Your Products</h2> <!-- Added title here -->
+                </div>
               <div *ngIf="cartItems.length > 0">
                 <div class="cart-item" *ngFor="let item of cartItems">
                   <div class="item-image">
                     <img [src]="getStrapiImageUrl(item.imageUrl)" [alt]="item.articleName">
                   </div>
                   <div class="item-details">
-                    <p style="flex: 1;">{{ item.Brand }}</p>
                     <p style="flex: 2;">{{ item.articleName }}</p>
                     <p style="flex: 2;">Quantity: {{ item.amount }}</p>
                     <p style="flex: 3;">Price: {{ item.price }} CHF</p> 
@@ -42,13 +44,14 @@
                       <p>Total Quantity: {{ totalQuantity }}</p>
                       <p>Total Price: {{ totalPrice }} CHF</p>
                       <div class="buy">
-                        <button class="buy-now">BUY ALL</button>
+                        <button class="buy-now"><strong>BUY</strong></button>
                       </div>
                     </div>
                     <div class="column">
                       <div class="card mb-4 mb-lg-0">
                         <div class="card-body">
-                          <p><strong>We accept</strong></p>
+                          <p><strong>We accept:</strong></p>
+                          <br>
                           <i class="fab fa-cc-paypal fa-2x"alt="Pay-Pal"></i>
                           <i class="fab fa-cc-amex fa-2x me-2" alt="American Express"></i>
                           <i class="fab fa-cc-visa fa-2x me-2" alt="Visa"></i>
