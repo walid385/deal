@@ -9,6 +9,9 @@
     font-size: 100px;
     line-height: 100px;  
     text-align: center;
+    ::shadow {
+        text-shadow: 2px 3px 3px #6B00D7;
+      }
 }
 
 .followUs_logos {

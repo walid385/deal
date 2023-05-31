@@ -13,6 +13,9 @@
     padding-bottom: -5px;
     margin-bottom: -5px; 
     margin-top: 0px;
+    ::shadow {
+        text-shadow: 2px 3px 3px #919191;
+      }
 } 
 .aboutUs_text p {
     color: rgb(107, 0, 215);

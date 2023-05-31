@@ -18,6 +18,9 @@
     margin-bottom: -14px; 
     margin-top: 0px; 
     padding-top: 100px;
+    ::shadow {
+        text-shadow: 2px 5px 3px #6B00D7;
+      }
 } 
 
 .dealsOfTheDay_image img {
@@ -44,6 +47,9 @@
     display: flex;
     justify-content: space-around; 
     font-size: 30px; 
+    ::shadow {
+        text-shadow: 2px 3px 3px #000000;
+      }
 } 
 
 .dealsOfTheDay_description__contentChildren p {
