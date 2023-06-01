@@ -139,3 +139,46 @@ Dieses Projekt verwendet verschiedene Drittanbieter-Bibliotheken, um die Entwick
 Unsere App interagiert mit den folgenden API's:
 
 - [REST API Strapi](https://strapi.io/): Ein Open-Source Node.js Headless CMS, um einfach anpassbare APIs zu erstellen. Wir verwenden Strapi für alle unsere Anforderungen an das Datenmanagement der Anwendung, einschliesslich dem Abrufen und Verwalten der dynamischen Inhalte, die in verschiedenen Komponenten angezeigt werden.
+
+## ChangeLog
+
+## Änderungsprotokoll seit der letzten Veröffentlichung des Read.me-Files
+
+Wir haben mehrere Änderungen an unserer Single Page Application (SPA) vorgenommen:
+
+- **Integration eines dynamischen Warenkorbs**: Unsere Wunschfunktion eines Warenkorbs konnte implementiert werden. Dieser speichert und zeigt die ausgewählten Produkte dynamisch an. Angezeigt werden Artikelname, Menge und Preis in Tabellenform, ähnlich wie bei bekannten Warenkörben. Zudem werden die Gesamtzahl der Artikel (Menge) und deren Gesamtpreis angezeigt. Unter den Gesamtmengen und -preisen befindet sich ein gut sichtbarer Button. Auf der linken unteren Seite des Warenkorbs, gegenüber der Gesamtmenge und dem Preis, findet der Kunde die akzeptierten Zahlungsmethoden.
+
+  ![1685610213615](image/README/1685610213615.png)
+- **Implementierung der ScrollIntoView-Methode mit einem neuen Directive**: Wir haben ein neues Directive generiert und eine ScrollIntoView-Methode implementiert. Damit kann der Benutzer vom Navigationsbereich aus geschmeidig zur gewünschten Komponente navigieren. Hier ist der zugehörige Code:
+
+  ```typescript
+  import { Directive, Input, ElementRef, HostListener } from '@angular/core';
+
+  @Directive({
+    selector: '[appSmoothScroll]'
+  })
+  export class SmoothScrollDirective {
+    @Input('appSmoothScroll') targetElementId!: string;
+
+    constructor(private _el: ElementRef) { }
+
+    @HostListener('click') onClick() {
+      this.smoothScroll();
+    }
+
+    private smoothScroll() {
+      const targetEl = document.getElementById(this.targetElementId);
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+  ```
+  Und die Verwendung im HTML:
+
+  ```html
+  <li><a appSmoothScroll="main">Deals of the Day</a></li>
+  <li><a appSmoothScroll="about">About Us</a></li>
+  <li><a appSmoothScroll="sponsor">Sponsors</a></li>
+  ```
+- **Hinzufügen eines Symbols im AboutComponent**: Im AboutComponent haben wir zusätzlich ein Icon integriert, das unseren ersten Satz des AboutComponents symbolisiert und unser Engagement repräsentiert: "Bei 99Deals verstehen wir, dass jeder ein gutes Schnäppchen liebt, und deshalb sind wir verpflichtet, Ihnen die besten Angebote auf dem Markt zu bringen".
