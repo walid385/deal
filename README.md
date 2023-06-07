@@ -147,9 +147,9 @@ Wir haben mehrere Änderungen an unserer Single Page Application (SPA) vorgenomm
 
 - **Integration eines dynamischen Warenkorbs**: Unsere Wunschfunktion eines Warenkorbs konnte implementiert werden. Dieser speichert und zeigt die ausgewählten Produkte dynamisch an. Angezeigt werden Artikelname, Menge und Preis in Tabellenform, ähnlich wie bei bekannten Warenkörben. Zudem werden die Gesamtzahl der Artikel (Menge) und deren Gesamtpreis angezeigt. Unter den Gesamtmengen und -preisen befindet sich ein gut sichtbarer Button. Auf der linken unteren Seite des Warenkorbs, gegenüber der Gesamtmenge und dem Preis, findet der Kunde die akzeptierten Zahlungsmethoden.
 
-  ![1686171862355](image/README/1686171862355.png)
-
   ![1686171474109](image/README/1686171474109.png)
+  
+  ![1686171862355](image/README/1686171862355.png)
 
   ![1686171557751](image/README/1686171557751.png)
 - **Implementierung der ScrollIntoView-Methode mit einem neuen Directive**: Wir haben ein neues Directive generiert und eine ScrollIntoView-Methode implementiert. Damit kann der Benutzer vom Navigationsbereich aus geschmeidig zur gewünschten Komponente navigieren. Hier ist der zugehörige Code:
