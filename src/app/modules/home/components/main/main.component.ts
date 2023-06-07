@@ -36,6 +36,7 @@ export interface Response {
 })
 export class MainComponent implements OnInit {
   articles: Article[] = [];
+  successMsgVisible: boolean = false; // Added this line
 
   constructor(private http: HttpClient, private cartService: CartService) {}
 
@@ -58,6 +59,8 @@ export class MainComponent implements OnInit {
   addToCart(event: Event, article: Article) {
     event.preventDefault();
     this.cartService.addToCart(article);
-    console.log("Added to cart: ", article); // Dies wird die hinzugefügte Artikelinformation anzeigen
+    console.log("Added to cart: ", article);
+    this.successMsgVisible = true;
+    setTimeout(() => this.successMsgVisible = false, 2000); // message will disappear after 2 seconds
   }
 }

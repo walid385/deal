@@ -80,3 +80,23 @@
     margin-top: 100px;
     margin-bottom: 0px;
 }  
+
+.success-msg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #6B00D7;
+    color: white;
+    z-index: 1000;
+    
+    ::shadow {
+      text-shadow: 2px 5px 2px #000000;
+    }
+    
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  

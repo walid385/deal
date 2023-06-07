@@ -107,8 +107,7 @@ Die Anwendung ist modular aufgebaut und in verschiedene Hauptkomponenten unterte
   | About      | Diese Komponente zeigt Textabschnitte und das Logo von 99Deals.                                       | **Ja**                  |
   | Follow     | Die Follow-Komponente zeigt die Logos und URLs der Social-Media-Kanäle von 99Deals an.               | Nein                          |
 
-
-  <img src="image/README/1684590416244.png" width="330" height="700" />
+  <img src="image/README/1686172208772.png" width="350" height="700"/>
 
 ## 3rd-Party Libraries for Angular Project
 
@@ -148,7 +147,11 @@ Wir haben mehrere Änderungen an unserer Single Page Application (SPA) vorgenomm
 
 - **Integration eines dynamischen Warenkorbs**: Unsere Wunschfunktion eines Warenkorbs konnte implementiert werden. Dieser speichert und zeigt die ausgewählten Produkte dynamisch an. Angezeigt werden Artikelname, Menge und Preis in Tabellenform, ähnlich wie bei bekannten Warenkörben. Zudem werden die Gesamtzahl der Artikel (Menge) und deren Gesamtpreis angezeigt. Unter den Gesamtmengen und -preisen befindet sich ein gut sichtbarer Button. Auf der linken unteren Seite des Warenkorbs, gegenüber der Gesamtmenge und dem Preis, findet der Kunde die akzeptierten Zahlungsmethoden.
 
-  ![1685610213615](image/README/1685610213615.png)
+  ![1686171862355](image/README/1686171862355.png)
+
+  ![1686171474109](image/README/1686171474109.png)
+
+  ![1686171557751](image/README/1686171557751.png)
 - **Implementierung der ScrollIntoView-Methode mit einem neuen Directive**: Wir haben ein neues Directive generiert und eine ScrollIntoView-Methode implementiert. Damit kann der Benutzer vom Navigationsbereich aus geschmeidig zur gewünschten Komponente navigieren. Hier ist der zugehörige Code:
 
   ```typescript
@@ -181,4 +184,6 @@ Wir haben mehrere Änderungen an unserer Single Page Application (SPA) vorgenomm
   <li><a appSmoothScroll="about">About Us</a></li>
   <li><a appSmoothScroll="sponsor">Sponsors</a></li>
   ```
-- **Hinzufügen eines Symbols im AboutComponent**: Im AboutComponent haben wir zusätzlich ein Icon integriert, das unseren ersten Satz des AboutComponents symbolisiert und unser Engagement repräsentiert: "Bei 99Deals verstehen wir, dass jeder ein gutes Schnäppchen liebt, und deshalb sind wir verpflichtet, Ihnen die besten Angebote auf dem Markt zu bringen".
+- **Hinzufügen eines Icons im AboutComponent**: Im AboutComponent haben wir zusätzlich ein Icon integriert, das unseren ersten Satz des AboutComponents symbolisiert und unser Engagement repräsentiert: "Bei 99Deals verstehen wir, dass jeder ein gutes Schnäppchen liebt, und deshalb sind wir verpflichtet, Ihnen die besten Angebote auf dem Markt zu bringen".
+
+  ![1686171611871](image/README/1686171611871.png)
